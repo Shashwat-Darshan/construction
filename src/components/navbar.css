@@ -1,0 +1,52 @@
+/* Basic styles for the navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    padding: 1rem;
+    position: relative;
+  }
+  
+  /* Style for the logo in the center */
+  .logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  /* Style for the left-aligned nav links (Home and About) */
+  .nav-links.left {
+    list-style: none;
+    display: flex;
+    gap: 7.5rem;
+    margin-left: 10%;
+  }
+  
+  /* Style for the right-aligned nav links (Services and Contact) */
+  .nav-links.right {
+    list-style: none;
+    display: flex;
+    gap: 7.5rem;
+    margin-left: auto;
+    margin-right: 10%;
+  }
+  
+  /* General nav link styles */
+  .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  .nav-links li a:hover {
+    color: #f0a500;
+  }
+  

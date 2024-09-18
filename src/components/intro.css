@@ -1,0 +1,13 @@
+/* Initial style for the text (invisible) */
+.fade-text {
+    opacity: 0;
+    transition: opacity 2s ease-in-out; /* Fade duration */
+    text-align: center;
+    margin: 20% 20%;
+  }
+  
+  /* When visible, the opacity will change to 1 */
+  .fade-text.visible {
+    opacity: 1;
+  }
+  
