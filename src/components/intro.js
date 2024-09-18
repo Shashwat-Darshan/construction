@@ -13,7 +13,8 @@ const FadeText = () => {
 
   return (
     <div className={`fade-text ${isVisible ? 'visible' : ''}`}>
-      This is a fade-in text effect!
+      Welcome to our (up)
+      Website (down)
     </div>
   );
 };
