@@ -69,7 +69,8 @@ const LogoBack = () => {
 
       // Auto-click function for slick dots
       const startAutoClick = () => {
-        const $dots = $('.slick-dots li', $splitSlideshow);
+        const $dots = $('.slick-dots li', $splitSlideshow); 
+        
         const clickDot = () => {
           const $currentDot = $dots.filter('.slick-active');
           const currentIndex = $dots.index($currentDot);
