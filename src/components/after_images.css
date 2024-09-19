@@ -5,9 +5,7 @@ body {
     padding: 0 20px;
   }
   
-  h2, .box {
-    margin-bottom: 100vh;
-  }
+
   
   h2 {
     text-align: center;
@@ -18,5 +16,22 @@ body {
     width: 100px;
     height: 100px;
   }
-  
+  .content-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(32, 31, 31, 0.712);
+    margin-inline:500px;
+    margin-top: 300px;
+  }
+  .content-wrapper img{
+    width:500px;
+    height:400px;
+    background-color: rgba(32, 31, 31, 0.712);
+    padding:20px
+  }
+  .fade-text{
+    margin-bottom: 50px;
+  }
   @import url('https://fonts.googleapis.com/css?family=Signika+Negative:300,400&display=swap'); 
