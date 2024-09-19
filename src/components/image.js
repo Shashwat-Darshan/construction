@@ -1,8 +1,14 @@
+import './image.css';
+import img1 from './images_for_vert_slideshow/1.jpg'
+import img2 from './images_for_vert_slideshow/2.jpg'
+import img3 from './images_for_vert_slideshow/3.jpg'
+import img4 from './images_for_vert_slideshow/4.jpg'
+import img5 from './images_for_vert_slideshow/5.jpg'
+import img6 from './images_for_vert_slideshow/6.jpg'
 import React, { useEffect, useRef } from 'react';
 import $ from 'jquery';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick.min.js';
-import './image.css';
 
 const LogoBack = () => {
   const splitSlideshowRef = useRef(null);
@@ -69,8 +75,7 @@ const LogoBack = () => {
 
       // Auto-click function for slick dots
       const startAutoClick = () => {
-        const $dots = $('.slick-dots li', $splitSlideshow); 
-        
+        const $dots = $('.slick-dots li', $splitSlideshow);
         const clickDot = () => {
           const $currentDot = $dots.filter('.slick-active');
           const currentIndex = $dots.index($currentDot);
@@ -79,7 +84,7 @@ const LogoBack = () => {
         };
 
         // Start clicking every 3 seconds
-        const intervalId = setInterval(clickDot, 3000); // Adjust the interval as needed
+        const intervalId = setInterval(clickDot, 3000);
 
         // Cleanup on component unmount
         return () => clearInterval(intervalId);
@@ -96,37 +101,47 @@ const LogoBack = () => {
     };
 
     // Add a delay to ensure DOM elements are available
-    const timer = setTimeout(initializeSlick, 100); // Adjust delay as needed
+    const timer = setTimeout(initializeSlick, 100);
 
-    return () => clearTimeout(timer); // Cleanup the timer
+    return () => clearTimeout(timer);
   }, []);
 
   return (
-    <div className="logo-back-container">
+    <div className='black'>
+      <div className="logo-back-container">
       <div className="split-slideshow" ref={splitSlideshowRef}>
         <div className="slideshow">
           <div className="slider">
             <div className="item">
-                <img src="https://raw.githubusercontent.com/supahfunk/supah-codepen/master/canyon-3.jpg" alt="Canyon 3" />
+              <img src={img1} alt="Image 1" />
             </div>
             <div className="item">
-              <img src="https://raw.githubusercontent.com/supahfunk/supah-codepen/master/canyon-3.jpg" alt="Canyon 3" />
+              <img src={img2} alt="Image 2" />
             </div>
             <div className="item">
-              <img src="https://raw.githubusercontent.com/supahfunk/supah-codepen/master/canyon-4.jpg" alt="Canyon 4" />
+              <img src={img3} alt="Image 3" />
             </div>
             <div className="item">
-              <img src="https://raw.githubusercontent.com/supahfunk/supah-codepen/master/canyon-1.jpg" alt="Canyon 1" />
+              <img src={img4} alt="Image 4" />
+            </div>
+            <div className="item">
+              <img src={img5} alt="Image 5" />
+            </div>
+            <div className="item">
+              <img src={img6} alt="Image 6" />
             </div>
           </div>
         </div>
         <div className="slideshow-text">
-          <div className="item">Canyon</div>
-          <div className="item">Desert</div>
-          <div className="item">Erosion</div>
-          <div className="item">Shape</div>
+          <div className="item">Foundation</div>
+          <div className="item">Super structure</div>
+          <div className="item">Facade structure</div>
+          <div className="item">Interior</div>
+          <div className="item">Finishing</div>
+          <div className="item">Completion</div>
         </div>
       </div>
+    </div>
     </div>
   );
 };

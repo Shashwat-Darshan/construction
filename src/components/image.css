@@ -1,7 +1,7 @@
 .logo-back-container {
     margin:5%;
     position: relative;
-    height: 90vh; /* Adjust this value as needed */
+    height: 70vh; /* Adjust this value as needed */
     width: 90%;
     overflow: hidden;
     
@@ -85,6 +85,7 @@
     display: block;
     width: 100%;
     height: auto;
+    display: none;
 }
 
 .slideshow .slick-dots li button {
@@ -225,5 +226,12 @@
       font-size: 40px;
     }
   }
-
+ .black{
+    margin: 3%;
+    height :650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+ }
   
